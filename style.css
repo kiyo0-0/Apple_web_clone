@@ -288,3 +288,56 @@ html, body{
 #trade-in h2{
     margin: 0 30%;
 }
+
+.carousel{
+    width: 100%;
+    overflow: hidden;
+    overflow-x: auto;
+    margin: 3em auto;
+    display: flex;
+    gap:1em;
+    position: relative;
+}
+
+/* .carousel::-webkit-scrollbar{
+        display: none; 
+} */
+
+
+.card{
+    flex: 0 0 70em;
+    height: 80vh;
+    width: 980px;
+    text-align: center;
+    align-content: center;
+    position: relative;
+}
+
+.card img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.poster-content{
+    display: flex;
+    position: absolute;
+    align-items: center;
+    bottom: 15%;
+    left:4%;
+    font-family: 'sf pro display regular';
+    font-size: 18px;
+    color: #fffff0;
+}
+.poster-content button{
+    height: 40px;
+    width: 120px;
+    border-radius: 24px;
+    border:none;
+    font-family: 'sf pro text regular';
+    font-size: 14px;
+}
+.poster-content h2{
+    font-family: 'sf pro display bold';
+    font-size: 19px;
+    margin-left:10px;
+}
