@@ -28,9 +28,10 @@
 html, body{
     height: 100vh;
     width: 100%;
-    background: rgba(245, 245, 247, .8);
+    background: #fffff0;
     font-family: 'SF Pro Text regular', sans-serif;
     color: #00000f;
+    scroll-behavior: smooth;
 }
 
 #nav{
@@ -38,6 +39,12 @@ html, body{
     font-size: 12px;
     padding: 0 18%;
     z-index: 99;
+    position: sticky;
+    background-color:rgba(245, 245, 247, .8) ;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    top: 0;
+
 }
 #nav ul{
     cursor: default;
@@ -73,7 +80,7 @@ html, body{
     font-weight: 300;
 }
 
-#hero{
+.hero{
     height: 90vh;
     width: 100%;
     position: relative;
@@ -86,14 +93,14 @@ html, body{
 
 }
 .image-container img{
-    height:900%;
-
     position: absolute;
     left: 50%;
     top: -300%;
     transform: translate(-50%, -50%);
-    
-    animation: scaledown 1.5s ease-out forwards; 
+}
+#hero-iphone-17-pro-img{
+    height:900%;
+    animation: scaledown 1s ease-out forwards;
     animation-delay: 0.4s;
 }
 @keyframes scaledown{
@@ -104,24 +111,25 @@ html, body{
     }
 }
 
-#hero-text h1{
+#hero-iphone-17-pro-text{
+    color: #fffff0;
+}
+.hero-text h1{
     position: absolute;
     top: 8%;
     width: 100%;
     text-align: center;
-    color: #fffff0;
     font-family: 'sf pro display regular';
     font-size: 60px;
     line-height: 1.08349;
     font-weight: 600;
     letter-spacing: -.002em;
 }
-#hero-text h2{
+.hero-text h2{
     position: absolute;
     top: 18%;
     width: 100%;
     text-align: center;
-    color: #fffff0;
     font-family: 'sf pro display regular';
     font-size: 30px;
     font-weight: 400;
@@ -151,6 +159,7 @@ html, body{
 .cta-links .hollow-button{
     background-color: transparent;
     border: 1px solid #0077ED;
+    color: #0077ED;
     transition: all 0.2s ease;
 }
 .cta-links .hollow-button:hover{
@@ -158,3 +167,45 @@ html, body{
     color: #fffff0;
 }
 
+#hero-iphone-air{
+    height: 80vh;
+    color: #00000f;
+}
+
+
+#hero-iphone-air img{
+    height: 100%;
+    top: 50%;
+
+}
+
+#hero-iphone-air .cta-links{
+    top: 30%;
+}
+
+#hero-iphone-17{
+    height: 80vh;
+    background: #F5F5F7;
+    color: #00000f;
+}
+#hero-iphone-17 img{
+    height: 100%;
+    top: 60%;
+
+}
+
+#grid-container{
+    position: relative;
+    width: 100%;
+    height: auto;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.grid-box{
+    position: relative;
+    width: 50%;
+    height: 60vh;
+    padding: 20px 40px;
+}
