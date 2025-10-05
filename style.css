@@ -101,7 +101,7 @@ html, body{
 #hero-iphone-17-pro-img{
     height:900%;
     animation: scaledown 1s ease-out forwards;
-    animation-delay: 0.4s;
+    animation-delay: 0.6s;
 }
 @keyframes scaledown{
 
@@ -131,7 +131,7 @@ html, body{
     width: 100%;
     text-align: center;
     font-family: 'sf pro display regular';
-    font-size: 30px;
+    font-size: 21px;
     font-weight: 400;
 }
 .cta-links{
@@ -200,12 +200,91 @@ html, body{
     height: auto;
     display:flex;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
 }
 .grid-box{
+    width: calc(50% - 6px);
+    height: 65vh;
+    margin: 0;
+
+}
+
+.promo{
+    height: 100%;
+    width: 100%;
     position: relative;
-    width: 50%;
-    height: 60vh;
-    padding: 20px 40px;
+
+}
+.grid-box .image-container img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%, -50%);
+
+    z-index: -1;
+}
+
+.promo-logo{
+    margin: 0 28%;
+    margin-top: 4%;
+
+}
+.promo-logo img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+}   
+
+.promo-text{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    justify-content: center;
+    text-align: center;
+
+}
+.promo-text h2{
+    font-family: 'sf pro text regular';
+    font-size: 22px;
+    font-weight: 100;
+    line-height: 1.14286;
+    letter-spacing: -.004em;
+    margin: 4px 0;
+}
+
+.promo-text .cta-links{
+    top: 110%;
+}
+.promo-text .cta-links button{
+    font-size: 14px;
+}
+
+.promo-text h1{
+    font-family: 'sf pro display regular';
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 1.125;
+    letter-spacing: -.004em;
+    margin-top: 6%;
+}
+
+#education .promo-text{
+    margin-top: 46%;
+    color: #fffff0;
+}
+
+#ipadair .promo-logo{
+    margin: 0 40%;
+    margin-top: 8%;
+}
+#trade-in .promo-logo{
+    margin: 0 40%;
+    margin-top: 8%;
+}
+#trade-in h2{
+    margin: 0 30%;
 }
